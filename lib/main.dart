@@ -42,7 +42,14 @@ class LotteryApp extends State<MyApp> {
               Container(
                 height: 250,
                 width: 300,
-                color: Colors.grey.withAlpha(100),
+                decoration:BoxDecoration(
+                  color: Colors.grey.withAlpha(100),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 2,
+                  ),
+                ) ,
                 child: Center(
                   child: x == 5
                       ? Column(
